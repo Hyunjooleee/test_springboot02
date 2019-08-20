@@ -25,6 +25,5 @@ public class CommonCodeController{
         modelandView.setViewName(viewName);
         modelandView.addObject("resultMap",resultMap);
         return modelandView;
-
     }
 }
