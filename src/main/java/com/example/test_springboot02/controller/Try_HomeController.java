@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Try_HomeController{
     @RequestMapping(value = "/try_home")
     public String action(){
-        return "home";
+        return "try_home";
     }
 }
