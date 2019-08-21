@@ -12,13 +12,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
 </head>
 
 <body>
     <div class="container">
-        <p>ID: <span th:text="${resultMap.MEMBER_ID}"></p>
-        <p>NAME: <span th:text="${resultMap.NAME}"></p>
+        <div class="form-group">
+            <label>검색</label>
+            <input type="text" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <table>
+            <tr th:each="resultData:${resultList}">
+                <td th:text="${resultData.COMMON_CODE_ID"></td>
+                <td th:text="${resultData.NAME"></td>
+                <td th:text="${resultData.DESCRIPTION"></td>
+            </tr>
+        </table>
+
     </div>
 </body>
 

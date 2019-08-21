@@ -17,8 +17,12 @@
 
 <body>
     <div class="container">
-        <p>ID: <span th:text="${resultMap.MEMBER_ID}"></p>
-        <p>NAME: <span th:text="${resultMap.NAME}"></p>
+        <table>
+            <tr>
+                <td th:text="${resultMap.MEMBER_ID}"></td>
+                <td th:text="${resultMap.NAME}"></td>
+            </tr>
+        </table>
     </div>
 </body>
 
