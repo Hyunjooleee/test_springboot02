@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+//동작 안됨
 @Controller
 public class CommonCodeController02{
     @RequestMapping(value = "/commonCode/list")
