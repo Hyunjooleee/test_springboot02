@@ -18,10 +18,20 @@
 <body>
     <div class="container">
         <table class="table">
-            <thead>ID</thead>
-            <tr th:each = "resultData:${resultList}">
-                <td th:text = ${resultData.id}>id</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>PASSPORT NUMBER</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="resultData:${resultList}">
+                    <td th:text=${resultData.id}>id</td>
+                    <td th:text=${resultData.name}>name</td>
+                    <td th:text=${resultData.passportNumber}>passportNumber</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>
