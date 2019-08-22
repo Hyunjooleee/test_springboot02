@@ -17,10 +17,11 @@
 
 <body>
     <div class="container">
-        <p>ID: <span th:text="${resultMap.MEMBER_ID}"></p>
-        <p>NAME: <span th:text="${resultMap.NAME}"></p>
-        <p>TEL: <span th:text="${resultMap.TEL}"></p>
-        <p>E-MAIL: <span th:text="${resultMap.EMAIL}"></p>
+        <table class="table">
+            <tr th:each = "resultData:${resultList}">
+                <td th:text = ${resultData.id}>id</td>
+            </tr>
+        </table>
     </div>
 </body>
 
